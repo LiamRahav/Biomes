@@ -12,22 +12,11 @@ module.exports = function(grunt) {
 				}
 			},
 			
-			htmlmin: {
-				dist: {
-					options: {
-						removeComments: true,
-						collapseWhitespace:true
-					},
-					files: {
-						'index.html': '_index.html',
-					}
-				}
-			},
 			
 			watch: {
 				style: {
-					files: ["css/**/*.scss", '*.html'],
-					tasks: ['sass', 'htmlmin']
+					files: ["css/**/*.scss", ],
+					tasks: ['sass']
 				}
 			}
 		});
@@ -36,5 +25,5 @@ module.exports = function(grunt) {
 		grunt.loadNpmTasks('grunt-contrib-sass');
 		grunt.loadNpmTasks('grunt-contrib-htmlmin');
 		
-		grunt.registerTask('default', ['sass:compile', 'htmlmin',"watch"]);
+		grunt.registerTask('default', ['sass:compile',"watch"]);
 };

@@ -5,6 +5,17 @@ $color-textwhite: #f7f7f7;
 $color-cloud: #ecf0f1;
 $color-lightwhite: #e7e8e9;
 
+@font-face {
+	font-family: "Nexa";
+	src: url("../fonts/Nexa.otf");
+}
+
+@font-face {
+	font-family: Nexa Bold;
+	font-weight: bold;
+	src: url("../fonts/Nexa \Bold.otf");
+}
+
 html {
 	width: 100%;
 	height: 100%;
@@ -17,5 +28,26 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	font-family: "Nexa", sans-serif;
+	
+
+	.center {
+		margin-left: auto; 
+		margin-right: auto;
+	}
+	
+	.center-text {
+		text-align: center;
+	}
+	
+	.navbar .navbar-nav {
+	  	display: inline-block;
+  		float: none;
+  		vertical-align: top;
+	}
+
+	.navbar .navbar-collapse {
+ 		text-align: center;
+	}
 }
 
