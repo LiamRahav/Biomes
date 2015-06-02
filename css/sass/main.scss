@@ -1,6 +1,21 @@
-$main-blue: #3498db;
-$dark-blue: #34495e;
-$main-green: #2ecc71;
-$main-white: #ecf0f1;
-$font-white: #f7f7f7;
+$color-blue: #3498db;
+$color-darkblue: #34495e;
+$color-green: #2ecc71;
+$color-textwhite: #f7f7f7;
+$color-cloud: #ecf0f1;
+$color-lightwhite: #e7e8e9;
+
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
 
