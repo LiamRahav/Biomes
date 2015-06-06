@@ -148,6 +148,30 @@ body {
 	opacity: 0.05;
 }
 
+.life {
+	display: table;
+	width: 80%;
+	height: 90%;
+	margin: 50px auto;
+	text-align: left;
+	color: $color-textwhite;
+	background: url(../img/small-map.svg) no-repeat center right scroll;
+	background-size: contain;
+	
+	.container {
+		display: table-cell;
+		vertical-align: middle;
+		
+		.description {
+			max-width: 100%;
+			width: 640px;
+			margin: 0;
+			font-size: 24px;
+			line-height: 1.5;
+		}	
+	}
+}
+
 .material-icons.md-light {
 		color: rgba(255, 255, 255, 1);
 	}
