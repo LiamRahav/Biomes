@@ -91,7 +91,6 @@ body {
 	width: 100%;
 	height: 80%;
 	color: $color-textwhite;
-	background-color: $color-cloud;
 	text-align: center;
 	border: 2px solid red;
 	@include vertical-parent;
@@ -123,8 +122,6 @@ body {
 	padding: 15px 0;
 	text-align: left;
 	color: $color-textwhite;
-//	background: url(../img/map.svg) no-repeat bottom center scroll;
-//	background-size: cover;
 	
 	.container {
 		.description {
@@ -135,6 +132,20 @@ body {
 			line-height: 1.5;
 		}	
 	}
+}
+
+#world-map {
+	position: absolute;
+	z-index: -999;
+	top: 10%;
+	left: 50%;
+	width: 100%;
+	height: 120%;
+	margin: 0;
+	margin-left: -50%;
+	background: url(../img/map.svg) no-repeat bottom center scroll;
+	background-size: contain;
+	opacity: 0.05;
 }
 
 .material-icons.md-light {
