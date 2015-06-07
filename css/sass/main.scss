@@ -4,6 +4,7 @@ $color-green: #2ecc71;
 $color-textwhite: #f7f7f7;
 $color-cloud: #ecf0f1;
 $color-lightwhite: #e7e8e9;
+$color-darkwhite: #d7d8d9;
 
 @font-face {
 	font-family: "Nexa";
@@ -151,8 +152,8 @@ body {
 .life {
 	display: table;
 	width: 80%;
-	height: 90%;
-	margin: 50px auto;
+	height: 80%;
+	margin: 10% auto;
 	text-align: left;
 	color: $color-textwhite;
 	background: url(../img/small-map.svg) no-repeat center right scroll;
@@ -169,6 +170,15 @@ body {
 			font-size: 24px;
 			line-height: 1.5;
 		}	
+		
+		.list {
+			max-width: 100%;
+			width: 640px;
+			margin: 15px 0 0;
+			font-size: 18px;
+			line-height: 1.5;
+			color: $color-darkwhite;
+		}
 	}
 }
 
