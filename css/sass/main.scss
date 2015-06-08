@@ -5,6 +5,11 @@ $color-textwhite: #f7f7f7;
 $color-cloud: #ecf0f1;
 $color-lightwhite: #e7e8e9;
 $color-darkwhite: #d7d8d9;
+$color-gray: #e2e2e2;
+$color-midnight: #575757;
+$color-shallowblue: #6b6b6b;
+$color-skyblue: #d8efed;
+$color-staleblue: #8ba09c;
 
 @font-face {
 	font-family: "Nexa";
@@ -149,6 +154,14 @@ body {
 	opacity: 0.05;
 }
 
+p.description {
+	max-width: 100%;
+	width: 640px;
+	margin: 0;
+	font-size: 24px;
+	line-height: 1.5;
+}	
+
 .life {
 	display: table;
 	width: 80%;
@@ -156,20 +169,11 @@ body {
 	margin: 10% auto;
 	text-align: left;
 	color: $color-textwhite;
-	background: url(../img/small-map.svg) no-repeat center right scroll;
-	background-size: contain;
 	
 	.container {
 		display: table-cell;
 		vertical-align: middle;
 		
-		.description {
-			max-width: 100%;
-			width: 640px;
-			margin: 0;
-			font-size: 24px;
-			line-height: 1.5;
-		}	
 		
 		.list {
 			max-width: 100%;
@@ -180,6 +184,61 @@ body {
 			color: $color-darkwhite;
 		}
 	}
+}
+
+.wrapper {
+	max-width: 100%;
+	width: 720px;
+	margin: 0 auto;
+	padding: 75px 15px;
+	
+	.header {
+		text-transform: uppercase;
+		font-size: 28px;
+		margin: 0 0 5px 0;
+	}
+	
+	.description {
+		max-width: 100%;
+		width: 350px;
+		margin: 0;
+		font-size: 16px;
+		line-height: 1.7;
+		color: $color-shallowblue;
+	}
+}
+
+
+.adaptations {
+	color: $color-textwhite;
+	background-color: $color-gray;
+	background-image: url(../img/small-map.svg) no-repeat center right scroll;
+	background-size: contain;
+	
+	.header {
+		color: $color-midnight;
+	}
+}
+
+.animals {
+	color: $color-midnight;
+	background-color: $color-skyblue;
+	
+	.header {
+		text-align: right;
+		margin-left: auto;
+		margin-right: 0;
+	}
+	
+	.description {
+		margin-left: auto;
+		margin-right: 0;
+	}
+}
+
+.plants {
+	color: $color-midnight;
+	background-color: $color-staleblue;
 }
 
 .material-icons.md-light {
