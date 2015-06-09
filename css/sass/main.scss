@@ -10,6 +10,9 @@ $color-midnight: #575757;
 $color-shallowblue: #6b6b6b;
 $color-skyblue: #d8efed;
 $color-staleblue: #8ba09c;
+$color-lightblue: #82d0d8;
+$color-green: #2ecc71;
+$color-red: #f16a57;
 
 @font-face {
 	font-family: "Nexa";
@@ -98,7 +101,6 @@ body {
 	height: 80%;
 	color: $color-textwhite;
 	text-align: center;
-	border: 2px solid red;
 	@include vertical-parent;
 	
 	.container {
@@ -188,21 +190,21 @@ p.description {
 
 .wrapper {
 	max-width: 100%;
-	width: 720px;
+	width: 902px;
 	margin: 0 auto;
 	padding: 75px 15px;
 	
 	.header {
 		text-transform: uppercase;
-		font-size: 28px;
+		font-size: 42px;
 		margin: 0 0 5px 0;
 	}
 	
 	.description {
 		max-width: 100%;
-		width: 350px;
+		width: 450px;
 		margin: 0;
-		font-size: 16px;
+		font-size: 24px;
 		line-height: 1.7;
 		color: $color-shallowblue;
 	}
@@ -237,8 +239,94 @@ p.description {
 }
 
 .plants {
-	color: $color-midnight;
+	color: $color-darkwhite;
 	background-color: $color-staleblue;
+	
+	.description {
+		color: $color-darkwhite;
+	}
+}
+
+.humans {
+	color: $color-textwhite;
+	background-color: $color-lightblue;
+	padding-top: 35px;
+	
+	.header {
+		text-transform: uppercase;
+		font-size: 42px;
+		margin: 15px 0 0 0;
+	}
+	
+	.col-md-6 {
+		padding-bottom: 25px;
+	}
+	
+	.details {
+		max-width: 100%;
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	
+	.positive {
+		color: $color-textwhite;
+		background-color: $color-green;
+		
+	}	
+	
+	.negative {
+		color: $color-textwhite;
+		background-color: $color-red;
+	}
+	
+	p {
+		@extend .description;
+		color: $color-textwhite;
+		margin: 10px 0;
+	}
+}
+
+.decomposers {
+	color: $color-textwhite;
+	background-color: $color-darkblue;
+	padding-top: 35px;
+	
+	.header {
+		text-transform: uppercase;
+		font-size: 42px;
+		margin: 15px 0 0 0;
+	}
+	
+	.table {
+		max-width: 100%;
+		width: 720px;
+		margin: 0 auto;
+		
+		.col-sm-6 {
+			background-color: $color-gray;
+		}
+	}
+	
+	.details {
+		@extend .description;
+		color: $color-textwhite;
+		max-width: 100%;
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 25px;
+	}
+	
+	.col-sm-6 {
+		color: $color-midnight;
+		font-size: 24px;
+		padding: 10px 0;
+		height: 100%;
+		text-align: left;
+		
+		&:nth-child(2), &:nth-child(3), &:nth-child(5), &:nth-child(6), &:nth-child(8) {
+			background-color: $color-cloud;
+		}
+	}
 }
 
 .material-icons.md-light {
