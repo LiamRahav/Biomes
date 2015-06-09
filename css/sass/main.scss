@@ -216,7 +216,7 @@ p.description {
 .adaptations {
 	color: $color-textwhite;
 	background-color: $color-gray;
-	background-image: url(../img/small-map.svg) no-repeat center right scroll;
+	background-image: url(../img/small-map.png) no-repeat center right scroll;
 	background-size: contain;
 	
 	.header {
@@ -254,6 +254,13 @@ p.description {
 	
 	.description {
 		color: $color-darkwhite;
+		height: 200px;
+	}
+	
+	.plant {
+		width: 250px;
+		text-align: center;
+		border-radius: 50%;
 	}
 }
 
