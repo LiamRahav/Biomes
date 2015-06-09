@@ -91,7 +91,7 @@ body {
 	
 	li {
 		a {
-			padding: 7px 50px !important;
+			padding: 7px 30px !important;
 		}
 	}
 }
@@ -151,9 +151,9 @@ body {
 	height: 120%;
 	margin: 0;
 	margin-left: -50%;
+	opacity: 0.05;
 	background: url(../img/map.svg) no-repeat bottom center scroll;
 	background-size: contain;
-	opacity: 0.05;
 }
 
 p.description {
@@ -171,6 +171,8 @@ p.description {
 	margin: 10% auto;
 	text-align: left;
 	color: $color-textwhite;
+	background: url(../img/small-map.svg) no-repeat right center scroll;
+	background-size: contain;
 	
 	.container {
 		display: table-cell;
@@ -235,7 +237,7 @@ p.description {
 	.description {
 		margin-left: auto;
 		margin-right: 0;
-		height: 250px;
+		height: 200px;
 	}
 	
 	.animal {
