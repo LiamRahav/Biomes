@@ -92,6 +92,21 @@
   <section class="animals">
       <div class="wrapper">
         <h1 class="header">Animals</h1>
+        <p class="description" id="animal-detail">Here are a few animals that live in the Amazons</p>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="img/otter.jpg" alt="" class="animal" width="200" onclick="change('#animal-detail', 'The River Otter has a dense layer of fat under it's skin and oily skin that protects it in extremely cold weather.')">
+            <h1 class="animal">The River Otter</h1>
+          </div>
+          <div class="col-md-4">
+            <img src="img/dolphin.jpg" alt="" class="animal" width="200" onclick="change('#animal-detail', 'The Amazon River Dolphin has stiff hairs on its beak. These hairs are a sensory organ that help the Inia sense prey in muddy rivers.')">
+            <h1 class="animal">Amazon River Dolphin</h1>
+          </div>
+          <div class="col-md-4">
+            <img src="img/turtle.jpg" alt="" class="animal" width="200" onclick="change('#animal-detail', 'Yellow-Spotted Amazon River Turtles have a hard neck which they bare at predators to protect themselves rather than pulling their heads into their shells.')">
+            <h1 class="animal">Yellow-Spotted Turtles</h1>
+          </div>
+        </div>
         <p class="description">The River Otter has a dense layer of fat under it's skin and oily skin that protects it in extremely cold weather.</p>
         <p class="description">The Amazon River Dolphin has stiff hairs on its beak. These hairs are a sensory organ that help the Inia sense prey in muddy rivers.</p>
         <p class="description">Yellow-Spotted Amazon River Turtles have a hard neck which they bare at predators to protect themselves rather than pulling their heads into their shells.</p>
@@ -301,6 +316,10 @@ Smith, Clare. "Plants That Live in the Waters of the Amazon Rivers." EHow. Deman
 		// if (id) {cation.hash.substring(1));}
 		// if (id) {activate(window.location.hash.substring(1));}
 	});
+  
+      function change(target, text) {
+        $(target).innerHTML = text;
+      }
      </script>
   </body>
 </html>
