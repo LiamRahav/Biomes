@@ -171,7 +171,7 @@ p.description {
 	margin: 10% auto;
 	text-align: left;
 	color: $color-textwhite;
-	background: url(../img/small-map.svg) no-repeat right center scroll;
+	background: url(../img/small-map.png) no-repeat center right scroll;
 	background-size: contain;
 	
 	.container {
@@ -215,8 +215,6 @@ p.description {
 .adaptations {
 	color: $color-textwhite;
 	background-color: $color-gray;
-	background-image: url(../img/small-map.png) no-repeat center right scroll;
-	background-size: contain;
 	
 	.header {
 		color: $color-midnight;
